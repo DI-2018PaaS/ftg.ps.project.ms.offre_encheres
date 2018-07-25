@@ -1,0 +1,45 @@
+{
+    "name": "Contrat",
+    "fields": [
+        {
+            "fieldName": "nContrat",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "dateSignatureContrat",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "nFournisseurExt",
+            "fieldType": "Long"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "contratOffre",
+            "otherEntityName": "offre",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "contrat"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "contratEnchere",
+            "otherEntityName": "enchere",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "contrat"
+        }
+    ],
+    "changelogDate": "20180725011035",
+    "entityTableName": "contrat",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "microserviceName": "msencheresoffres"
+}

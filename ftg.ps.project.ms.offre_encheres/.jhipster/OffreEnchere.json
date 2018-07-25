@@ -1,0 +1,44 @@
+{
+    "name": "OffreEnchere",
+    "fields": [
+        {
+            "fieldName": "nInscription",
+            "fieldType": "Long",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "nUniqueEnchere",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "dateReponseEnchere",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "nActeurExt",
+            "fieldType": "Long"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "offreEnchere",
+            "otherEntityName": "enchere",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "offreEnchere"
+        }
+    ],
+    "changelogDate": "20180725011037",
+    "entityTableName": "offre_enchere",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "microserviceName": "msencheresoffres"
+}

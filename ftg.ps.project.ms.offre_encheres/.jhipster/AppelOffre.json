@@ -1,0 +1,44 @@
+{
+    "name": "AppelOffre",
+    "fields": [
+        {
+            "fieldName": "nInscription",
+            "fieldType": "Long",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "dateReponseOffre",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "nUniqueOffre",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "nFournisseurExt",
+            "fieldType": "Long"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "appelOffre",
+            "otherEntityName": "offre",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "appelOffre"
+        }
+    ],
+    "changelogDate": "20180725011034",
+    "entityTableName": "appel_offre",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "microserviceName": "msencheresoffres"
+}

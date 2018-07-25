@@ -1,0 +1,51 @@
+entity Offre {
+    nUniqueOffre Long required,
+    dateLancement LocalDate,
+    dateClotureOffre LocalDate,
+    quantiteProduit Long,
+    nAuteurOffre Long,
+    typeAuteurOffre String,
+    activityID Long,
+    nArticles Long
+}
+
+entity AppelOffre {
+    nInscription Long required,
+    dateReponseOffre LocalDate,
+    nUniqueOffre Long,
+    nFournisseurExt Long
+}
+
+entity Contrat {
+    nContrat Long,
+    dateSignatureContrat LocalDate,
+    nFournisseurExt Long
+}
+
+entity Enchere {
+    nUniqueEnchere Long required,
+    dateLancementEnchere LocalDate,
+    dateClotureEnchere LocalDate,
+    quantiteProduit Long,
+    nAuteurEnchere Long,
+    typeAuteurEnchere String,
+    prixDepart BigDecimal,
+    prixCourant BigDecimal,
+    prixDeVente BigDecimal,
+    activityID Long,
+    nArticles Long
+}
+
+entity OffreEnchere {
+    nInscription Long required,
+    nUniqueEnchere Long,
+    dateReponseEnchere LocalDate,
+    nActeurExt Long
+}
+
+relationship OneToOne {
+    Contrat{contratOffre} to Offre,
+    Contrat{contratEnchere} to Enchere,
+    AppelOffre to Offre,
+    OffreEnchere to Enchere
+}

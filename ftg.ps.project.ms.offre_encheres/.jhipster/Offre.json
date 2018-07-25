@@ -1,0 +1,51 @@
+{
+    "name": "Offre",
+    "fields": [
+        {
+            "fieldName": "nUniqueOffre",
+            "fieldType": "Long",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "dateLancement",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dateClotureOffre",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "quantiteProduit",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "nAuteurOffre",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "typeAuteurOffre",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "activityID",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "nArticles",
+            "fieldType": "Long"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20180725011033",
+    "entityTableName": "offre",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "microserviceName": "msencheresoffres"
+}

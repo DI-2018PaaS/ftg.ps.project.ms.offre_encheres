@@ -1,0 +1,63 @@
+{
+    "name": "Enchere",
+    "fields": [
+        {
+            "fieldName": "nUniqueEnchere",
+            "fieldType": "Long",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "dateLancementEnchere",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dateClotureEnchere",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "quantiteProduit",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "nAuteurEnchere",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "typeAuteurEnchere",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "prixDepart",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "prixCourant",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "prixDeVente",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "activityID",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "nArticles",
+            "fieldType": "Long"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20180725011036",
+    "entityTableName": "enchere",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "microserviceName": "msencheresoffres"
+}
