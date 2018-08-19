@@ -3,6 +3,7 @@ entity Offre {
     dateLancement LocalDate,
     dateClotureOffre LocalDate,
     quantiteProduit Long,
+    sommePrixProduit Long,
     nAuteurOffre Long,
     typeAuteurOffre String,
     activityID Long,
@@ -13,7 +14,8 @@ entity AppelOffre {
     nInscription Long required,
     dateReponseOffre LocalDate,
     nUniqueOffre Long,
-    nFournisseurExt Long
+    nFournisseurExt Long,
+    mondantDevis Long
 }
 
 entity Contrat {
